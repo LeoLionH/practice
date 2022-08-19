@@ -1,0 +1,56 @@
+{% block start%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>  
+{% endblock%}
+<section class="header">
+{% block header %}
+<div class="row-1">
+        <div id="nav" class="col-12">
+            <h1>Leo Hardy</h1>
+                <div id="link-background" class="col-12">
+                    <table id="links">
+                      <tr id="nav_text">
+                        <td><a href="/">Home</a></td>
+                        <td><a href="/cv">My CV</a></td>
+                        <td><a href="/about">About me</a></td>
+                      </tr>
+                    </table>
+                </div>
+        </div>
+</div>
+{% endblock %}
+</section>
+
+<section class="main">
+{% block main %}
+<div class="row-1">
+</div>
+{% endblock %}
+</section>
+
+<section class="footer">
+{% block footer %}
+<div class="row-3">
+    <div id="footer-background" class="col-12">
+        <table id="footer_links">
+            <tr><td><a href="/">Home</a></td><tr>
+            <tr><td><a href="/cv">My CV</a></td></tr>
+            <tr><td><a href="/about">About me</a></td></tr>
+        </table>
+    </div>
+</div>
+{% endblock %}
+</section>
+
+
+{% block end %}
+    </body>
+</html>
+{% endblock %}
+
+

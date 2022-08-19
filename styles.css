@@ -1,0 +1,170 @@
+/* Global */
+* {
+    box-sizing: border-box;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+[class*="col-"] {
+    float: left;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+  td {
+    padding-right: 20px;
+}
+
+
+h1 {
+    color: white;
+    position: relative;
+    left: 20px;
+    font-size: 48px
+}
+
+h2 {
+    position: relative;
+    left: 20px;
+    color:#353A45;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-left: 20px;
+    color: #353A45;
+}
+
+li {
+    padding: 10px;
+    line-height: 0.5px;
+}
+
+/* Row 1 */
+
+header {
+    background-color: #353A45;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+    float: left;
+    background-color: cadetblue;
+}
+
+#link-background {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#links {
+    float: left;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    font-size: 18px;
+    left: 20px
+}
+
+a, :visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cadetblue;
+    text-decoration: none;
+    background-color: white;
+    background-size: 20px;
+}
+
+a:active {
+    color: white;
+    background-color:#353A45;
+}
+
+
+/* body */
+
+#main {
+    float: right;
+}
+
+#pic {
+    width: 100%;
+    padding: 0%;
+}
+
+#title {
+    font-size: 16px;
+    position: relative;
+    bottom:30px;
+}
+
+#skills {
+    float: left;    
+    border-style:hidden;
+    background-color: #353A45;
+    color: white;
+}
+
+.black_h1 {
+    color:#353A45;
+    font-size: 24px;
+}
+
+.white-text {
+    color: white;
+}
+
+#about {
+    color:#353A45;
+}
+
+#end {
+    padding-bottom: 20px;
+}
+
+
+/* Footer */
+
+#footer-background {
+    background-color:#353A45;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer_links {
+    color:#353A45;
+    position: relative;
+    left: 20px;
+    font-size: 18px;
+}
+
+
