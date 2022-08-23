@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1"
+  },
+  "dependencies": {
+    "netlify-cms-app": "^2.15.72"
   }
 }
