@@ -1,0 +1,11 @@
+<ul>
+    {% for blog in blogs %}
+    <div>
+        <li class="body_list">
+            <strong>
+                <a id="lister" href="{{ blog.url | url }}">{{ blog.data.title }}</a>
+            </strong>
+        </li>
+    </div>
+    {% endfor %}
+</ul>
