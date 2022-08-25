@@ -1,5 +1,5 @@
 --- 
-permalink: /about/ 
+permalink: /about/
 ---
 
 {% extends "content_page.njk" %}
@@ -7,7 +7,7 @@ permalink: /about/
     <div class="row">
         <div id="about" class="col-3">
             <h1 class="black_h1">{{ title }}</h1>
-            <p>{{ body }}</p>
+            <p>{{ content | safe }}</p>
         </div>
     </div>
 {% endblock %}

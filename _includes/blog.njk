@@ -5,7 +5,7 @@
             <h1 class="black_h1">Post</h1>
             <h2>{{ title }} </h2>
             <img src="{{ featuredImage | url }}" alt=""></img>
-            <p>{{ body }}</p>
+            <p>{{ content | safe }}</p>
             
         </div>
     </div>
