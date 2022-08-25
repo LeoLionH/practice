@@ -1,5 +1,5 @@
 ---
-layout: about.njk    
+layout: about.njk
 title: About me
-body: This is about me
 ---
+<p>This is about <strong>me</strong></p>
