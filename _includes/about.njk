@@ -1,8 +1,13 @@
+--- 
+permalink: /about/ 
+---
+
 {% extends "content_page.njk" %}
 {% block main %}
     <div class="row">
         <div id="about" class="col-3">
-            <h1 class="black_h1">About me</h1>
+            <h1 class="black_h1">{{ title }}</h1>
+            <p>{{ body }}</p>
         </div>
     </div>
 {% endblock %}

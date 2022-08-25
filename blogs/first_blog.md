@@ -2,7 +2,6 @@
 layout: blog.njk    
 title: Post example test
 description: First blog post
-featuredImage: /img/Leo_Crop.jpg    
+body: Blog post body
 ---
 
-Blog post body
