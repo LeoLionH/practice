@@ -1,0 +1,13 @@
+--- 
+permalink: /
+---
+
+{% extends "content_page.njk" %}
+{% block main %}
+    <div class="row">
+        <div id="welcome" class="col-12">
+    <h1 class="black_h1">{{ title }}</h1>
+</div>
+    {{ content | safe }}
+</div>
+{% endblock %}

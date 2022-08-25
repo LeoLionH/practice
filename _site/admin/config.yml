@@ -6,6 +6,15 @@ media_folder: "_site/img/"
 public_folder: "/img/"
 
 collections:
+  - name: "home" # Used in routes, e.g., /admin/collections/blog
+    label: "home" # Used in the UI
+    folder: "cms" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "about" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "blogs" # Used in routes, e.g., /admin/collections/blog
     label: "blog" # Used in the UI
     folder: "blogs" # The path to the folder where the documents are stored
