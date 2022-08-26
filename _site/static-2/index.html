@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>  
+
+<section class="header">
+
+<div class="row-1">
+        <div id="nav" class="col-12">
+            <h1>Leo Hardy</h1>
+                <div id="link-background" class="col-12">
+                    <table id="links">
+                      <tr id="nav_text">
+                        <td><a href="/">Home</a></td>
+                        <td><a href="/cv">My CV</a></td>
+                        <td><a href="/about">About me</a></td>
+                      </tr>
+                    </table>
+                </div>
+        </div>
+</div>
+
+</section>
+
+<section class="main">
+
+    <div class="row">
+        <div id="about" class="col-3">
+            <h1 class="black_h1">Welcome to my site</h1>
+            <p><p>Hi! I'm Leo and welcome to my site. It's been built as that I can practice my coding and has used a combination of modern web development tools such as:</p>
+<ul>
+<li><strong>CMS:</strong> Netlify CMS</li>
+<li><strong>Hosting:</strong> Netlify</li>
+<li><strong>Version control:</strong> Git</li>
+<li><strong>Templating:</strong> Nunjucks</li>
+<li><strong>Runtime:</strong> Node</li>
+<li><strong>Compilation:</strong> Eleventy</li>
+</ul>
+</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="footer">
+
+<div class="row-3">
+    <div id="footer-background" class="col-12">
+        <table id="footer_links">
+            <tr><td><a href="/">Home</a></td><tr>
+            <tr><td><a href="/cv">My CV</a></td></tr>
+            <tr><td><a href="/about">About me</a></td></tr>
+        </table>
+    </div>
+</div>
+
+</section>
+
+
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+    </body>
+</html>
+
+
+
