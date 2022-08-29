@@ -22,12 +22,11 @@ skills:
   skill3title: User experience
   skill2title: Management
   skill1title: Analytics
-
 summary:
   summaryTitle: Summary
   summaryBody: >-
-    As a Product Manager, I'm passionate about delivering the most intuitive and
-    accessible user experiences for both B2B and B2C audiences. 
+    <p>As a Product Manager, I'm passionate about delivering the most intuitive
+    and accessible user experiences for both B2B and B2C audiences.</p>
 
 
     I believe in data-led decision making, collecting market research, user testing and analytics to build and then iterate on a product.
@@ -37,7 +36,5 @@ summary:
 
 
     As a result, the teams I run consistently deliver sprints and roadmap features through clear communication, effective planning and a culture of shared ownership.
-
 layout: cv2
-
 ---
