@@ -37,4 +37,5 @@ summary:
 
     As a result, the teams I run consistently deliver sprints and roadmap features through clear communication, effective planning and a culture of shared ownership.
 layout: cv2
+segmenttitle: Edit CV
 ---
