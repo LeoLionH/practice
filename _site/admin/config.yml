@@ -45,6 +45,7 @@ collections:
     widget: "object"
     folder: "cv_test" 
     fields:
+      - {label: "Segment title", name: "segmenttitle", widget: "string"}
       - label: "skills"
         name: "skills"
         collapsed: true
