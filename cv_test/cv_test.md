@@ -2,6 +2,14 @@
 layout: cv2
 segmenttitle: Skills
 
+summaryTitle: Summary
+summaryBody: As a Product Manager, I'm passionate about delivering the most intuitive and accessible user experiences for both B2B and B2C audiences. 
+            I believe in data-led decision making, collecting market research, user testing and analytics to build and then iterate on a product.
+
+            I take pride in being able to take complex problems and translate them into simple concepts that my team can deliver and our clients can understand.
+            
+            As a result, the teams I run consistently deliver sprints and roadmap features through clear communication, effective planning and a culture of shared ownership.
+
 skill1title: Analytics
 skill1body: Using the right tools for the job, I can interpret and articulate
   user behavior to make effective data-led decisions
