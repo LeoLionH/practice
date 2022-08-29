@@ -62,10 +62,10 @@ collections:
           - {label: "skill 5 - body", name: "skill5body", widget: "text"}
           - {label: "skill 6 - Title", name: "skill6title", widget: "string"}
           - {label: "skill 6 - body", name: "skill6body", widget: "text"}
-    - label: "Summary"
-      name: "summary"
-      widget: "object"
-      fields: 
+      - label: "Summary"
+        name: "summary"
+        widget: "object"
+        fields: 
           - {label: "Summary title", name: "summaryTitle", widget: "string"}
           - {label: "Summary body", name: "summaryBody", widget: "text"}
 
