@@ -69,7 +69,7 @@ collections:
         collapsed: true
         fields: 
           - {label: "Summary title", name: "summaryTitle", widget: "string"}
-          - {label: "Summary body", name: "summaryBody", widget: "text"}
+          - {label: "Summary body", name: "summaryBody", widget: "markdown"}
 
 
   
