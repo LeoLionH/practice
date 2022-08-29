@@ -25,8 +25,8 @@ skills:
 summary:
   summaryTitle: Summary
   summaryBody: >-
-    <p>As a Product Manager, I'm passionate about delivering the most intuitive
-    and accessible user experiences for both B2B and B2C audiences.</p>
+    As a Product Manager, I'm passionate about delivering the most intuitive and
+    accessible user experiences for both B2B and B2C audiences.
 
 
     I believe in data-led decision making, collecting market research, user testing and analytics to build and then iterate on a product.
