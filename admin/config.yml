@@ -47,7 +47,7 @@ collections:
     fields:
       - label: "skills"
         name: "skills"
-        widget: "hidden"
+        widget: "object"
         fields: 
           - {label: "Segment title", name: "segmenttitle", widget: "string"}
           - {label: "skill 1 - Title", name: "skill1title", widget: "string"}
@@ -64,7 +64,7 @@ collections:
           - {label: "skill 6 - body", name: "skill6body", widget: "text"}
     - label: "Summary"
       name: "summary"
-      widget: "hidden"
+      widget: "object"
       fields: 
         - {label: "Summary title", name: "summaryTitle", widget: "string"}
         - {label: "Summary body", name: "summaryBody", widget: "text"}
