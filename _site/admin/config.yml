@@ -43,6 +43,7 @@ collections:
   - label: "Skills"
     name: "skills"
     widget: "object"
+    folder: "cv_test" 
     fields:
       - {label: "skill 1 - Title", name: "skill1title", widget: "string"}
       - {label: "skill 1 - body", name: "skill1body", widget: "string"}
