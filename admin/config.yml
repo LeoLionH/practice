@@ -40,10 +40,20 @@ collections:
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - label: "Skills"
-    name: "skills"
+  - label: "CV"
+    name: "cv"
     widget: "object"
     folder: "cv_test" 
     fields:
       - {label: "skill 1 - Title", name: "skill1title", widget: "string"}
       - {label: "skill 1 - body", name: "skill1body", widget: "string"}
+      - {label: "skill 2 - Title", name: "skill2title", widget: "string"}
+      - {label: "skill 2 - body", name: "skill2body", widget: "string"}
+      - {label: "skill 3 - Title", name: "skill3title", widget: "string"}
+      - {label: "skill 3 - body", name: "skill3body", widget: "string"}
+      - {label: "skill 4 - Title", name: "skill4title", widget: "string"}
+      - {label: "skill 4 - body", name: "skill4body", widget: "string"}
+      - {label: "skill 5 - Title", name: "skill5title", widget: "string"}
+      - {label: "skill 5 - body", name: "skill5body", widget: "string"}
+      - {label: "skill 6 - Title", name: "skill6title", widget: "string"}
+      - {label: "skill 6 - body", name: "skill6body", widget: "string"}
