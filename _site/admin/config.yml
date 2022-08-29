@@ -45,6 +45,8 @@ collections:
     widget: "object"
     folder: "cv_test" 
     fields:
+      label: "Edit CV"
+      name: "editCv"
       - label: "skills"
         name: "skills"
         collapsed: true
