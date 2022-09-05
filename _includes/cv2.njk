@@ -33,9 +33,16 @@ permalink: /cv2/
         <div id="main" class="col-9">
             <div id="summary">
               <h2>{{summary.summaryTitle}}</h2>
-              <p>{{summary.summaryBody}}</p>
-        <br>
-        </div>
+              <div class="card summaryBody">{{ summary.summaryBody | markdown | safe }}</div>
+                <br>
+            </div>
+            <div id="experience">
+                <h2>{{experience.experienceTitle}}</h2>
+                <div id="card experienceBody">
+                    {% include "experience.njk" %}
+                </div>               
+            <br>
+            </div>
     </div>
     <div id="end" class="col-12">
     </div>

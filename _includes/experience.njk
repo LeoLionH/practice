@@ -1,0 +1,30 @@
+{% for item in collections.experiences %}
+<table class="experienceTable {{ item.data.jobTitle }}">
+<tr>
+    <td class="experienceRole {{ item.data.jobTitle }} date">
+        <strong>Role:</strong>
+        <span id="jobTitle">{{ item.data.jobTitle }}</span>
+    </td>
+    <td>
+        <strong>Date:</strong>
+        <span id="jobDateFrom">{{ item.data.jobDateFrom }}</span>
+        -
+        <span id="jobDateTo">{{ "current" if item.data.currentJob else item.data.jobDateTo }}</span>
+    </td>
+    <td>
+        
+    </td>
+    <td>
+
+    </td>
+</tr>
+<p></p>
+<p></p>
+<p><span id="jobDateTo">{{ item.data.jobDateTo }}</id></p>
+<p><span id="currentJob">{{ item.data.currentJob }}</id></p>
+<p><span id="jobCompany">{{ item.data.jobCompany }}</id></p>
+<p><span id="jobLocation">{{ item.data.jobLocation }}</id></p>
+<p><span id="jobDetail">{{ item.data.jobDetail }}</id></p>
+</table>
+{% endfor %}
+
