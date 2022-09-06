@@ -83,7 +83,7 @@ collections:
       - {label: "job title", name: "jobTitle", widget: "string"}
       - {label: "Start date", name: "jobDateFrom", widget: "date", format: "MM YYYY"}
       - {label: "End date", name: "jobDateTo", widget: "date", format: "MM YYYY"}
-      - {label: "current job?", name: "currentJob", widget: "boolean"}
+      - {label: "current job?", name: "currentJob", widget: "boolean", required: false }
       - {label: "company", name: "jobCompany", widget: "string"}
       - {label: "Location", name: "jobLocation", widget: "string"}
       - {label: "job details", name: "jobDetail", widget: "markdown"}
