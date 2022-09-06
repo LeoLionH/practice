@@ -74,8 +74,7 @@ p {
 
 li {
     color: black;
-    padding: 10px;
-    line-height: 0.5px;
+    padding: 2px;
 }
 
 
@@ -109,7 +108,6 @@ header {
     bottom: 0px;
     right: 0px;
     font-size: 18px;
-    left: 0px
 }
 
 a, :visited {
