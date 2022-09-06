@@ -71,27 +71,21 @@ collections:
         fields: 
           - {label: "Summary title", name: "summaryTitle", widget: "string"}
           - {label: "Summary body", name: "summaryBody", widget: "markdown"}
-      - label: "experience"
-        name: "experiences"
-        widget: "object"
-        folder: "cv_test/experiences"
-        collapsed: true
-        fields: 
-          - {label: "Experience title", name: "experienceTitle", widget: "string"}
-          - label: "job experience"
-            name: "jobExperience"
-            collapsed: true
-            create: true
-            slug: "{{jobTitle}}"
-            widget: "object"
-            fields: 
-              - {label: "job title", name: "jobTitle", widget: "string"}
-              - {label: "Start date", name: "jobDateFrom", widget: "date", format: "MM YYYY"}
-              - {label: "End date", name: "jobDateTo", widget: "date", format: "MM YYYY"}
-              - {label: "current job?", name: "currentJob", widget: "boolean"}
-              - {label: "company", name: "jobCompany", widget: "string"}
-              - {label: "Location", name: "jobLocation", widget: "string"}
-              - {label: "job details", name: "jobDetail", widget: "markdown"}
+  
+  - label: "job experience"
+    name: "jobExperience"
+    collapsed: true
+    create: true
+    slug: "{{jobTitle}}"
+    widget: "object"
+    fields: 
+      - {label: "job title", name: "jobTitle", widget: "string"}
+      - {label: "Start date", name: "jobDateFrom", widget: "date", format: "MM YYYY"}
+      - {label: "End date", name: "jobDateTo", widget: "date", format: "MM YYYY"}
+      - {label: "current job?", name: "currentJob", widget: "boolean"}
+      - {label: "company", name: "jobCompany", widget: "string"}
+      - {label: "Location", name: "jobLocation", widget: "string"}
+      - {label: "job details", name: "jobDetail", widget: "markdown"}
 
 
     
