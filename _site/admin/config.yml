@@ -81,14 +81,16 @@ collections:
           - label: "job experience"
             name: "jobExperience"
             collapsed: true
+            create: true
+            slug: "{{jobTitle}}"
             widget: "object"
             fields: 
               - {label: "job title", name: "jobTitle", widget: "string"}
-              - {label: "dates", name: "jobDateFrom", widget: "date", format: "MM YYYY"}
-              - {label: "dates", name: "jobDateTo", widget: "date", format: "MM YYYY"}
+              - {label: "Start date", name: "jobDateFrom", widget: "date", format: "MM YYYY"}
+              - {label: "End date", name: "jobDateTo", widget: "date", format: "MM YYYY"}
               - {label: "current job?", name: "currentJob", widget: "boolean"}
               - {label: "company", name: "jobCompany", widget: "string"}
-              - {label: "company", name: "jobLocation", widget: "string"}
+              - {label: "Location", name: "jobLocation", widget: "string"}
               - {label: "job details", name: "jobDetail", widget: "markdown"}
 
 
