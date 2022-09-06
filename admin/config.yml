@@ -76,7 +76,7 @@ collections:
     name: "jobExperience"
     collapsed: true
     create: true
-    folder: "cv_test"
+    folder: "cv_test/experiences"
     slug: "{{jobTitle}}"
     widget: "object"
     fields: 
