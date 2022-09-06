@@ -34,10 +34,21 @@
     }
   }
 
-  td {
-    padding-right: 20px;
+table {
+    margin-left: 20px;
 }
 
+td {
+    padding-right: 20px;
+    width: auto;
+}
+
+.experienceTable {
+    background-color: lightgray;
+    border: 1px solid;
+    border-color: gray;
+    padding: 20px;
+}
 
 h1 {
     color: white;
@@ -67,6 +78,8 @@ li {
     line-height: 0.5px;
 }
 
+
+
 /* Row 1 */
 
 header {
@@ -84,13 +97,19 @@ header {
     padding-bottom: 4px;
 }
 
+
+#nav_text > td {
+    width: auto;
+    margin-left: 0px;
+}
+
 #links {
     float: left;
     position: relative;
     bottom: 0px;
     right: 0px;
     font-size: 18px;
-    left: 20px
+    left: 0px
 }
 
 a, :visited {
@@ -114,7 +133,7 @@ a:active {
 /* body */
 
 #main {
-    float: right;
+    float: left;
 }
 
 #pic {
