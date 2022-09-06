@@ -2,7 +2,7 @@
 jobTitle: Product Manager
 jobDateFrom: 09 2011
 jobDateTo: 12 2021
-currentJob: true
+currentJob: false
 jobCompany: Madgex
 jobLocation: Brighton, East Sussex
 jobDetail: >-
