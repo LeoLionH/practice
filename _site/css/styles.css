@@ -41,13 +41,7 @@ table {
 td {
     padding-right: 20px;
     width: auto;
-}
-
-.experienceTable {
-    background-color: lightgray;
-    border: 1px solid;
-    border-color: gray;
-    padding: 20px;
+    text-align:left;
 }
 
 h1 {
@@ -74,7 +68,10 @@ p {
 
 li {
     color: black;
-    padding: 2px;
+    padding: 4px;
+    position: relative;
+    right: 20px;
+
 }
 
 
@@ -130,6 +127,13 @@ a:active {
 
 /* body */
 
+.experienceTable {
+    background-color: lightgray;
+    border: 1px solid;
+    border-color: gray;
+    padding: 20px;
+}
+
 #main {
     float: left;
 }
@@ -147,9 +151,9 @@ a:active {
 
 #skills {
     float: left;    
-    border-style:hidden;
     background-color: #353A45;
     color: white;
+    
 }
 
 .black_h1 {
@@ -159,6 +163,8 @@ a:active {
 
 .white-text {
     color: white;
+    position: relative;
+    right: 10px;
 }
 
 #about {
