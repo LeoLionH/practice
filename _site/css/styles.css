@@ -34,9 +34,6 @@
     }
   }
 
-table {
-    margin-left: 20px;
-}
 
 td {
     padding-right: 20px;
@@ -47,14 +44,16 @@ td {
 h1 {
     color: white;
     position: relative;
-    left: 20px;
     font-size: 48px
 }
 
 h2 {
     position: relative;
-    left: 20px;
-    color:#353A45;
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
 }
 
 body {
@@ -62,7 +61,6 @@ body {
 }
 
 p {
-    margin-left: 20px;
     color: #353A45;
 }
 
@@ -71,7 +69,11 @@ li {
     padding: 4px;
     position: relative;
     right: 20px;
+}
 
+.margin {
+    position: relative;
+    margin-left: 20px;
 }
 
 
@@ -81,6 +83,11 @@ li {
 header {
     background-color: #353A45;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#siteName {
+    position: relative;
+    margin-left: 20px;
 }
 
 #nav {
@@ -127,6 +134,23 @@ a:active {
 
 /* body */
 
+.bottom {
+    position: relative;
+    bottom: 30px;
+}
+
+#main {
+    float: left;
+    margin-left:20px;
+}
+
+/* leftbox */
+.leftBox {
+    position: relative;
+    bottom:30px;
+}
+
+/* middle column */
 .experienceTable {
     background-color: lightgray;
     border: 1px solid;
@@ -134,19 +158,11 @@ a:active {
     padding: 20px;
 }
 
-#main {
-    float: left;
-}
+
 
 #pic {
     width: 100%;
     padding: 0%;
-}
-
-#title {
-    font-size: 16px;
-    position: relative;
-    bottom:30px;
 }
 
 #skills {
@@ -163,8 +179,6 @@ a:active {
 
 .white-text {
     color: white;
-    position: relative;
-    right: 10px;
 }
 
 #about {

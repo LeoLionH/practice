@@ -5,11 +5,24 @@ permalink: /cv2/
 {% block main %}
     <div class="row">
         <div id="skills" class="col-3">
+            {# Image #}
             <img src="/img/Leo_Crop.jpg" alt="" id="pic">
-            <h1 id="name">Leo Hardy</h1>
-            <h2 class="white-text" id="title">Senior Product Manager<h2>
-            <h2 class="white-text">{{skills.segmenttitle}}</h2>
-            <table class="white-text">
+            {# Info #}
+            <div class="white-text leftBox margin">
+                <h1 id="name">Leo Hardy</h1>
+                <h2 id="title" class="bottom">Senior Product Manager</h2>
+                <h3 id="email" class="bottom"><strong>Contact details</strong></h3>
+                <table class="bottom">
+                    <tr>
+                        <td>Email: <a href="mailto:me@leohardy.co.uk">me@leohardy.co.uk</a></td>
+                    </tr>
+                </table>
+                
+
+            </div>
+            {# skills #}
+            <h2 class="white-text margin">{{skills.segmenttitle}}</h2>
+            <table class="white-text margin">
                 <tr>
                     <td><p class="white-text"><strong>{{ skills.skill1title }} - </strong>{{ skills.skill1body }}</p></td>     
                 </tr>

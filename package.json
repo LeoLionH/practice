@@ -14,6 +14,7 @@
   "dependencies": {
     "netlify-cms-app": "^2.15.72",
     "nunjucks-markdown": "^2.0.1",
-    "nunjucks-markdown-filter": "^0.1.0"
+    "nunjucks-markdown-filter": "^0.1.0",
+    "package.json": "^2.0.1"
   }
 }
