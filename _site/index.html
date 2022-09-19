@@ -1,87 +1,67 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/styles.css">
-    </head>
-    <body>  
+  <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/css/styles2.css">
+      <link rel="stylesheet" href="/css/nav.css">
+  </head> 
+  <body>
+    <div class="grid-container">
 
-<section class="header">
-
-<div class="row-1">
-        <div id="nav" class="col-12">
-            <div class="margin">
-              <h1 class="col-3">Leo Hardy</h1>
-                  <div id="link-background" class="col-9">
-                      <table id="links">
-                        <tr id="nav_text">
-                          <td><a href="/">Home</a></td>
-                          <td><a href="/cv">Work</a></td>
-                          <td><a href="/about">Music</a></td>
-                        </tr>
-                      </table>
-                  </div>
-                  <p class="col-12">Brighton</p>
-            </div>
+      
+      <div class="header-all">
+    <div class="header-main">
+        <h1 class="header-name">Leo Hardy</h1>
+        <h3 class="header-location">Brighton</h3>
+    </div>
+    <div class="nav-hamburger">
+        <div class="icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> 
         </div>
-</div>
-
-</section>
-
-<section class="main">
-
-<div class="row-2-1">
-    <div id="work" class="col-6">
-        <h2>work</h2>
     </div>
 </div>
-    <div id="right-blank" class="col-6">
-        <div id="music" class="col-6">
-        <h2></h2>
+<div class="nav-nested">
+        <div class="nav-item header-link-1"><a href="/">Home</a></div>
+        <div class="nav-item header-link-2"><a href="/cv">Work</a></div>
+        <div class="nav-item header-link-3"><a href="/about">Music</a></div>
     </div>
+
+
+      
+      <div class="main">
+        
+<h2 class="title">Welcome</h2>
+<p><p>Hi! I'm Leo and welcome to my site. It's been built so that I can practice my coding skills (or lack thereof) using a combination of modern web development tools, including Netlify for hosting and the CMS, Nunjucks for templating and Eleventy to compile the HTML files.</p>
+</p>
+
+      </div>
+
+      
+      
+
     </div>
-<div class="row2-2">
-    <div id="left-blank" class="col-6">
-        <h2></h2>
-    </div>
-    <div id="music" class="col-6">
-        <h2>music</h2>
-    </div>
-</div>
 
-</section>
-
-<section class="footer">
-
-<div class="row-3">
-    <div id="footer-background" class="col-12">
-        <table id="footer_links">
-            <tr><td><a href="/">Home</a></td><tr>
-            <tr><td><a href="/cv">Work</a></td></tr>
-            <tr><td><a href="/about">Music</a></td></tr>
-        </table>
-    </div>
-</div>
-
-</section>
-
-
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+    
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
         });
       }
-    });
-  }
-</script>
-    </body>
+    </script>
+    <script src="/scripts/javascript.js"></script>
+  </body>
 </html>
-
 
 

@@ -3,13 +3,14 @@ const md = new markdownIt({
   html: true,
 });
 
-module.exports= function (eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("markdown", (content) => {
     return md.render(content);
   });
+  eleventyConfig.addPassthroughCopy("scripts");
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("css")
+  eleventyConfig.addPassthroughCopy("css");
   return {
     passthroughFileCopy: true
   }

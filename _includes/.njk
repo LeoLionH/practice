@@ -4,22 +4,6 @@ permalink: /
 
 {% extends "content_page.njk" %}
 {% block main %}
-<div class="row-2-1">
-    <div id="work" class="col-6">
-        <h2>work</h2>
-    </div>
-</div>
-    <div id="right-blank" class="col-6">
-        <div id="music" class="col-6">
-        <h2></h2>
-    </div>
-    </div>
-<div class="row2-2">
-    <div id="left-blank" class="col-6">
-        <h2></h2>
-    </div>
-    <div id="music" class="col-6">
-        <h2>music</h2>
-    </div>
-</div>
+<h2 class="title">{{ title }}</h2>
+<p>{{ content | safe }}</p>
 {% endblock %}

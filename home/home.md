@@ -1,12 +1,5 @@
 ---
 layout: .njk
-title: Welcome to my site
+title: Welcome
 ---
-Hi! I'm Leo and welcome to my site. It's been built as that I can practice my coding and has used a combination of modern web development tools such as:
-
-* **CMS:** Netlify CMS
-* **Hosting:** Netlify
-* **Version control:** Git
-* **Templating:** Nunjucks
-* **Runtime:** Node
-* **Compilation:** Eleventy
+Hi! I'm Leo and welcome to my site. It's been built so that I can practice my coding skills (or lack thereof) using a combination of modern web development tools, including Netlify for hosting and the CMS, Nunjucks for templating and Eleventy to compile the HTML files. 
