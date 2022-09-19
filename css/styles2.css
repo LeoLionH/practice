@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    Padding: 0px;
+}
+
+:root {
+    --border-style: none;
+    --border-color: black;
+    --background: none;
+    --text-color: white;
+    --transition: all 0.3s ease-in-out;
+    --margin: 20px;
+}
+
+.header-name, .nav-hamburger, .title, .header-location {
+    margin: var(--margin);
+}
+
+.header-all { grid-area: header; }
+.nav-hamburger { grid-area: hamburger;}
+.nav-nested { grid-area: nav; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav nav nav'
+    '.  main . '
+    'footer footer footer';
+    gap: 1em;
+    color: var(--text-color);
+    grid-auto-columns: 1fr;
+}
+
+@media (max-width: 780px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'nav nav'
+        'main main'
+        'footer footer';
+        gap: 0em;
+        color: var(--text-color);
+        grid-auto-columns: 1fr;
+    }
+
+    .header-all {
+        background-color: black;
+        gap: 0px;
+    }
+}
+
+.header-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-main {
+    min-width: 75%;
+}
+
+/*.grid-container > div {
+    background: var(--background);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+}
+*/
+
+body {
+    background-image: url("/img/ocean-resized-dark2.jpg");
+    background-color: #cccccc;
+    margin: 0px;
+    border: 0px;
+    font-family: 'roboto', sans-serif;
+  }
+
+.nav-nested > div {
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    padding: 5px;
+}
+
+a,a:link {
+    text-decoration: none;
+    transition: 0.7s ease;
+    color: var(--text-color)
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-hamburger {
+    display: flex;
+    justify-content: flex-end;   
+}
+
+.main, li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+h1, h2 {
+    font-size: 3rem;
+}
+
+
+
+
+

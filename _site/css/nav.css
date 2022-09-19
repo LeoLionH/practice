@@ -1,0 +1,59 @@
+.bar {
+    display: block;
+    width: 25px; 
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    background-color: black;
+    position: relative;
+    top: 3px;
+}
+
+.icon:hover > .bar {
+    background-color: white;
+}
+
+.icon {
+    background-color: white;
+    height: 35px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.icon:hover {
+    background-color: black;
+    height: 35px;
+}
+
+.nav-hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.nav-hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.nav-hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-nested {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    top: -500%;
+    gap:0;
+    width: 100%;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.nav-nested.active {
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-nested.active > .nav-item > a {
+    color: black;
+}
+
