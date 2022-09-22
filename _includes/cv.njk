@@ -1,63 +1,38 @@
 ---
 permalink: /cv/
 ---
-{% extends "content_page.njk" %}
+{% extends "three_column_layout.njk" %}
 {% block main %}
-    <div class="row">
-        <div id="skills" class="col-3">
-            {# Image #}
-            <img src="/img/Leo_Crop.jpg" alt="" id="pic">
-            {# Info #}
-            <div class="white-text leftBox margin">
-                <h1 id="name">Leo Hardy</h1>
-                <h2 id="title" class="bottom">Senior Product Manager</h2>
-                <h3 id="email" class="bottom"><strong>Contact details</strong></h3>
-                <table class="bottom">
-                    <tr>
-                        <td>Email: <a href="mailto:me@leohardy.co.uk">me@leohardy.co.uk</a></td>
-                    </tr>
-                </table>
-                
-
-            </div>
-            {# skills #}
-            <h2 class="white-text margin">{{skills.segmenttitle}}</h2>
-            <table class="white-text margin">
-                <tr>
-                    <td><p class="white-text"><strong>{{ skills.skill1title }} - </strong>{{ skills.skill1body }}</p></td>     
-                </tr>
-                <tr>
-                    <td><p class="white-text"><strong>{{ skills.skill2title }} - </strong>{{ skills.skill2body }}</p></td>
-                </tr>
-                <tr>
-                    <td><p class="white-text"><strong>{{ skills.skill3title }} - </strong>{{ skills.skill3body }}</p></td>
-                </tr>
-                <tr>
-                    <td><p class="white-text"><strong>{{ skills.skill4title }} - </strong>{{ skills.skill4body }}</p></td>
-                </tr>
-                <tr>
-                    <td><p class="white-text"><strong>{{ skills.skill5title }} - </strong>{{ skills.skill5body }}</p></td>
-                </tr>
-                <tr>
-                    <td><p class="white-text"><strong>{{ skills.skill6title }} - </strong>{{ skills.skill6body }}</p></td>
-                </tr>
-            </table>
-        </div>
-        <div id="main" class="col-5">
-            <div id="summary">
-              <h2>{{summary.summaryTitle}}</h2>
-              <div class="card summaryBody">{{ summary.summaryBody | markdown | safe }}</div>
-                <br>
-            </div>
-            <div id="experience">
-                <h2>{{experience.experienceTitle}}</h2>
-                <div id="card experienceBody">
-                    {% include "experience.njk" %}
-                </div>               
-            </div>
+    {# Image #}
+    <div class="image">
+        <img src="/img/Leo_Crop.jpg" alt="" id="pic">
     </div>
-    <div id="end" class="col-12">
+    {# Info #}
+    <div class="contact">
+        <h1 id="name">Leo Hardy</h1>
+        <h2 id="title" class="bottom">Product Manager</h2>
+        <h3 id="email" class="bottom"><strong>Contact details</strong></h3>
+        <p>Email: <a href="mailto:me@leohardy.co.uk">me@leohardy.co.uk</a></p>
     </div>
-{% endblock %}
-{% block end %}
+    {# skills #}
+    <div class="skills">
+        <h2 class="skills-title">{{skills.segmenttitle}}</h2>
+        <p class="skill"><strong>{{ skills.skill1title }} - </strong>{{ skills.skill1body }}</p>     
+        <p class="skill"><strong>{{ skills.skill2title }} - </strong>{{ skills.skill2body }}</p>
+        <p class="skill"><strong>{{ skills.skill3title }} - </strong>{{ skills.skill3body }}</p>
+        <p class="skill"><strong>{{ skills.skill4title }} - </strong>{{ skills.skill4body }}</p>
+        <p class="skill"><strong>{{ skills.skill5title }} - </strong>{{ skills.skill5body }}</p>
+        <p class="skill"><strong>{{ skills.skill6title }} - </strong>{{ skills.skill6body }}</p>
+    </div>
+    <div class="summary">
+        <h2 class="summary-title">{{summary.summaryTitle}}</h2>
+        <div class="card summaryBody">{{ summary.summaryBody | markdown | safe }}</div>
+        <br>
+    </div>
+    <div class="experience">
+        <h2>{{experience.experienceTitle}}</h2>
+        <div id="card experienceBody">
+            {% include "experience.njk" %}
+        </div>               
+    </div>
 {% endblock %}

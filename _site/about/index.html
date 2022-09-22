@@ -2,14 +2,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="/css/styles2.css">
-      <link rel="stylesheet" href="/css/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/styles2.css">
+<link rel="stylesheet" href="/css/nav.css">
   </head> 
+  
   <body>
     <div class="grid-container">
 
@@ -35,7 +36,6 @@
 
 
       
-      <div class="main">
         
     <div class="row">
         <div id="about" class="col-3">
@@ -45,27 +45,27 @@
         </div>
     </div>
 
-      </div>
 
       
       
-
-    </div>
 
     
+    </div>
+
+  
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-    <script src="/scripts/javascript.js"></script>
-  </body>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  <script src="/scripts/javascript.js"></script>
+</body>
 </html>
 
 

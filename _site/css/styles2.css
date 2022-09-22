@@ -4,7 +4,7 @@
 }
 
 :root {
-    --border-style: none;
+    --border-style: solid;
     --border-color: black;
     --background: none;
     --text-color: white;
@@ -12,8 +12,16 @@
     --margin: 20px;
 }
 
-.header-name, .nav-hamburger, .title, .header-location {
-    margin: var(--margin);
+.header-name, .nav-hamburger, .title {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-top: var(--margin);
+}
+
+.header-location {
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
 }
 
 .header-all { grid-area: header; }
@@ -48,7 +56,7 @@
     }
 
     .header-all {
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.7);
         gap: 0px;
     }
 }
@@ -63,6 +71,10 @@
     min-width: 75%;
 }
 
+.title {
+    margin: var(--margin)
+}
+
 /*.grid-container > div {
     background: var(--background);
     border-style: var(--border-style);
@@ -72,10 +84,15 @@
 
 body {
     background-image: url("/img/ocean-resized-dark2.jpg");
+    background-repeat: no-repeat;
     background-color: #cccccc;
     margin: 0px;
     border: 0px;
     font-family: 'roboto', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
 .nav-nested > div {
@@ -113,7 +130,57 @@ h1, h2 {
     font-size: 3rem;
 }
 
+/* CV page */
 
+.image { grid-area: image; }
+.contact { grid-area: contact; }
+.skills { grid-area: skills; }
+.summary { grid-area: summary; }
+.experience { grid-area: experience; }
 
+.three-column-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'nav nav nav nav'
+    'contact summary summary skills'
+    'contact experience experience skills'
+    'footer footer footer footer';
+    gap: 1em;
+    color: var(--text-color);
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    margin: var(--margin)
+}
 
+.skills-title, .summary-title {
+    margin-bottom: var(--margin)
+}
+.skills > p {
+    margin-bottom: 10px;
+    background: white;
+    color:black;
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    padding: 15px;
+}
+
+.skills, .summary {
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    padding: var(--margin);
+    background-color: black;
+}
+
+.image {
+    display: none;
+}
+
+.summary, .experience {
+    margin: 0px 20px;
+}
+
+.contact > h2 {
+    font-size: 2rem;
+}
 

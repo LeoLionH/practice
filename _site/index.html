@@ -2,14 +2,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="/css/styles2.css">
-      <link rel="stylesheet" href="/css/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/styles2.css">
+<link rel="stylesheet" href="/css/nav.css">
   </head> 
+  
   <body>
     <div class="grid-container">
 
@@ -35,33 +36,34 @@
 
 
       
-      <div class="main">
         
-<h2 class="title">Welcome</h2>
-<p><p>Hi! I'm Leo and welcome to my site. It's been built so that I can practice my coding skills (or lack thereof) using a combination of modern web development tools, including Netlify for hosting and the CMS, Nunjucks for templating and Eleventy to compile the HTML files.</p>
+<div class="main">
+    <h2 class="title">Welcome</h2>
+    <p><p>Hi! I'm Leo and welcome to my site. It's been built using a variety of web development tools, including Netlify for the CMS, Nunjucks for templating and Eleventy to compile the HTML files.</p>
 </p>
+</div>
 
-      </div>
 
       
       
-
-    </div>
 
     
+    </div>
+
+  
     <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-    <script src="/scripts/javascript.js"></script>
-  </body>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  <script src="/scripts/javascript.js"></script>
+</body>
 </html>
 
 
