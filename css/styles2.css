@@ -4,7 +4,7 @@
 }
 
 :root {
-    --border-style: solid;
+    --border-style: none
     --border-color: black;
     --background: none;
     --text-color: white;
