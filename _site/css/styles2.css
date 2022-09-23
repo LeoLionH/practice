@@ -4,7 +4,7 @@
 }
 
 :root {
-    --border-style: solid;
+    --border-style: none
     --border-color: black;
     --background: none;
     --text-color: white;
@@ -131,26 +131,55 @@ h1, h2 {
 }
 
 /* CV page */
-
+.cv-container { grid-area: cv; }
 .image { grid-area: image; }
 .contact { grid-area: contact; }
 .skills { grid-area: skills; }
 .summary { grid-area: summary; }
 .experience { grid-area: experience; }
+.central-column { grid-area: central-column; }
 
 .three-column-container {
     display: grid;
     grid-template-areas: 
-    'header header header header'
-    'nav nav nav nav'
-    'contact summary summary skills'
-    'contact experience experience skills'
-    'footer footer footer footer';
+    'header'
+    'nav '
+    'cv'
+    'footer';
     gap: 1em;
     color: var(--text-color);
     grid-auto-columns: 1fr;
     grid-template-rows: auto;
-    margin: var(--margin)
+    margin: var(--margin);
+}
+
+.cv-container {
+    display: grid;
+    grid-template-areas:
+    'contact central-column central-column skills'
+    'contact central-column central-column skills';
+    gap: 1em;
+    color: var(--text-color);
+    grid-auto-columns: 1fr;
+    grid-template-rows: minmax(min-content, max-content);
+    margin: auto;
+    max-width: 1200px;  
+}
+
+.central-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.summary {
+    min-height: 25%;
+    max-height: 25%;
+}
+.experience {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 75%;
 }
 
 .skills-title, .summary-title {
@@ -165,15 +194,15 @@ h1, h2 {
     padding: 15px;
 }
 
-.skills, .summary {
+.skills, .summary, .contact, .experience {
     border-style: var(--border-style);
     border-color: var(--border-color);
     padding: var(--margin);
     background-color: black;
 }
 
-.image {
-    display: none;
+#pic {
+    max-width: 300px; 
 }
 
 .summary, .experience {

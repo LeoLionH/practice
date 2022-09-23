@@ -3,12 +3,13 @@ permalink: /cv/
 ---
 {% extends "three_column_layout.njk" %}
 {% block main %}
-    {# Image #}
-    <div class="image">
-        <img src="/img/Leo_Crop.jpg" alt="" id="pic">
-    </div>
+<div class="cv-container">
     {# Info #}
     <div class="contact">
+        {# Image #}
+        <div class="image">
+            <img src="/img/Leo_Crop.jpg" alt="" id="pic">
+        </div>
         <h1 id="name">Leo Hardy</h1>
         <h2 id="title" class="bottom">Product Manager</h2>
         <h3 id="email" class="bottom"><strong>Contact details</strong></h3>
@@ -24,15 +25,18 @@ permalink: /cv/
         <p class="skill"><strong>{{ skills.skill5title }} - </strong>{{ skills.skill5body }}</p>
         <p class="skill"><strong>{{ skills.skill6title }} - </strong>{{ skills.skill6body }}</p>
     </div>
-    <div class="summary">
-        <h2 class="summary-title">{{summary.summaryTitle}}</h2>
-        <div class="card summaryBody">{{ summary.summaryBody | markdown | safe }}</div>
-        <br>
+    <div class="central-column">
+        <div class="summary">
+            <h2 class="summary-title">{{summary.summaryTitle}}</h2>
+            <div class="card summaryBody">{{ summary.summaryBody | markdown | safe }}</div>
+            <br>
+        </div>
+        <div class="experience">
+            <h2>{{experience.experienceTitle}}</h2>
+            <div id="card experienceBody">
+                {% include "experience.njk" %}
+            </div>               
+        </div>
     </div>
-    <div class="experience">
-        <h2>{{experience.experienceTitle}}</h2>
-        <div id="card experienceBody">
-            {% include "experience.njk" %}
-        </div>               
-    </div>
+</div>
 {% endblock %}
