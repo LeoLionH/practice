@@ -199,7 +199,7 @@ p {
     flex-direction: column;
 }
 
-@media (max-width:900px) {
+@media (max-width:1000px) {
     .cv-container {
         display: grid;
         grid-template-areas:
