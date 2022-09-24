@@ -164,7 +164,6 @@ p {
     'nav '
     'cv'
     'footer';
-    gap: 1em;
     color: var(--text-color);
     grid-auto-columns: 1fr;
     grid-template-rows: auto;
