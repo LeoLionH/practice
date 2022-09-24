@@ -170,6 +170,8 @@ p {
     grid-template-rows: auto;
 }
 
+
+
 .cv-container {
     display: grid;
     grid-template-areas:
@@ -181,6 +183,73 @@ p {
     grid-template-rows: minmax(min-content, max-content);
     margin: auto;
     max-width: 1200px;  
+    margin: 0 20px 0px 20px;
+}
+
+.contact-2 {
+    position: relative;
+    top: 76px;
+}
+
+#skill-list, .summaryBody, .contact-2, .experienceBody {
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    padding: var(--margin);
+    background-color: #708090;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:900px) {
+    .cv-container {
+        display: grid;
+        grid-template-areas:
+        'contact contact'
+        'skills central-column'
+        'skills central-column';
+        color: var(--text-color);
+    }
+    h2 {
+        margin-left: var(--margin);
+    }
+    .contact-2 {
+        position: relative;
+        top: 0px;
+        background-color:initial;
+    }
+    .image {
+        display: none;
+    }
+    #name {
+        display: none;
+    }
+}
+
+.central-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: hidden;
+}
+@media (max-width:780px) {
+    .cv-container {
+        display: grid;
+        grid-template-areas:
+        'contact'
+        'central-column'
+        'skills';
+        color: var(--text-color);
+    }
+    h2 {
+        margin-left: var(--margin);
+    }
+    .contact-2 {
+        position: relative;
+        top: 0px;
+    }
+    .image {
+        display: none;
+    }
 }
 
 .central-column {
@@ -227,20 +296,6 @@ p {
     padding: 15px;
 }
 
-
-#skill-list, .summaryBody, .contact-2, .experienceBody {
-    border-style: var(--border-style);
-    border-color: var(--border-color);
-    padding: var(--margin);
-    background-color: #708090;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-2 {
-    position: relative;
-    top: 78px;
-}
 #pic {
     max-width: 260px; 
 }
