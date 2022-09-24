@@ -4,7 +4,7 @@
 }
 
 :root {
-    --border-style: none
+    --border-style: none;
     --border-color: black;
     --background: none;
     --text-color: white;
@@ -40,6 +40,11 @@
     gap: 1em;
     color: var(--text-color);
     grid-auto-columns: 1fr;
+}
+
+.grid-container, .three-column-container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 @media (max-width: 780px) {
@@ -95,6 +100,9 @@ body {
     background-size: cover;
   }
 
+.nav-nested {
+    overflow: hidden;
+}
 .nav-nested > div {
     border-style: var(--border-style);
     border-color: var(--border-color);
@@ -117,17 +125,27 @@ a:hover {
     justify-content: flex-end;   
 }
 
-.main, li {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+li {
     list-style: none;
+    padding-bottom: 0.5em;
 }
 
 h1, h2 {
     font-size: 3rem;
+}
+
+p {
+    line-height: 20px;
+    padding-bottom: 0.5em;
+
 }
 
 /* CV page */
@@ -150,7 +168,6 @@ h1, h2 {
     color: var(--text-color);
     grid-auto-columns: 1fr;
     grid-template-rows: auto;
-    margin: var(--margin);
 }
 
 .cv-container {
@@ -170,22 +187,38 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    overflow: hidden;
 }
 
-.summary {
-    min-height: 25%;
-    max-height: 25%;
-}
-.experience {
+.experience-list {
     overflow-y: auto;
     overflow-x: hidden;
-    max-height: 75%;
+}
+
+.experienceBody {
+    margin-bottom: var(--margin);
+    color: black;
+}
+
+.experienceTable, .table-jobSummary {
+    text-align: left;
+    padding: 0.5em;
+    background-color: white;
+}
+
+.experienceTable {
+    background-color: lightgray;
+}
+
+#experience-title {
+    margin-bottom: var(--margin);
 }
 
 .skills-title, .summary-title {
     margin-bottom: var(--margin)
 }
-.skills > p {
+
+#skill-list > p {
     margin-bottom: 10px;
     background: white;
     color:black;
@@ -194,22 +227,26 @@ h1, h2 {
     padding: 15px;
 }
 
-.skills, .summary, .contact, .experience {
+
+#skill-list, .summaryBody, .contact-2, .experienceBody {
     border-style: var(--border-style);
     border-color: var(--border-color);
     padding: var(--margin);
-    background-color: black;
+    background-color: #708090;
+    display: flex;
+    flex-direction: column;
 }
 
+.contact-2 {
+    position: relative;
+    top: 78px;
+}
 #pic {
-    max-width: 300px; 
+    max-width: 260px; 
 }
 
-.summary, .experience {
-    margin: 0px 20px;
-}
 
-.contact > h2 {
-    font-size: 2rem;
-}
+
+
+
 

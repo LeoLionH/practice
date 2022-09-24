@@ -1,33 +1,28 @@
 {% for item in collections.experiences %}
-<table class="experienceTable {{ item.data.jobTitle }}">
-<tr>
-  <td class="experienceRole {{ item.data.jobTitle }}">
-    <strong>Role:</strong>
-    <span id="jobTitle">{{ item.data.jobTitle }}</span>
-  </td> 
-  <td>
-    <strong>Date:</strong>
-    <span id="jobDateFrom">{{ item.data.jobDateFrom }}</span>
-    -
-    <span id="jobDateTo">{{ "current" if item.data.currentJob else item.data.jobDateTo }}</span>
-  </td>
-<tr>
-  <td>
-    <strong>Company: </strong>
-    <span id="jobCompany">{{ item.data.jobCompany }}</id>
-  </td>
-  <td>
-      <strong>Location: </strong>
-      <span id="jobLocation">{{ item.data.jobLocation }}</id>
-  </td>
-</tr>
-<tr>
-  <td colspan="2">
-      <br>
-      <span id="jobDetail">{{ item.data.jobDetail | markdown | safe }}</id>
-  </td>
-</tr>
-</table>
-<br>
+<div class="card experienceBody">
+  <div class="experienceTable {{ item.data.jobTitle }}">
+      <p class="experienceRole {{ item.data.jobTitle }}">
+        <strong>Role:</strong>
+        <span id="jobTitle">{{ item.data.jobTitle }}</span>
+      </p> 
+      <p>
+        <strong>Date:</strong>
+        <span id="jobDateFrom">{{ item.data.jobDateFrom }}</span>
+        -
+        <span id="jobDateTo">{{ "current" if item.data.currentJob else item.data.jobDateTo }}</span>
+      </p>
+      <p>
+        <strong>Company: </strong>
+        <span id="jobCompany">{{ item.data.jobCompany }}</span>
+      </p>
+      <p>
+          <strong>Location: </strong>
+          <span id="jobLocation">{{ item.data.jobLocation }}</span>
+      </p>
+  </div>
+  <div class="table-jobSummary">
+    <span id="jobDetail">{{ item.data.jobDetail | markdown | safe }}</span>
+  </div>
+</div>
 {% endfor %}
 

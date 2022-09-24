@@ -6,36 +6,48 @@ permalink: /cv/
 <div class="cv-container">
     {# Info #}
     <div class="contact">
-        {# Image #}
-        <div class="image">
-            <img src="/img/Leo_Crop.jpg" alt="" id="pic">
+        <div class="contact-2">
+            {# Image #}
+            <div class="image">
+                <img src="/img/fin_me.jpg" alt="" id="pic">
+            </div>
+            <h1 id="name">Leo Hardy</h1>
+            <h3 id="title" class="bottom">Product Manager</h3>
+            <br>
+            <p><strong>Email:</strong> <a href="mailto:me@leohardy.co.uk">me@leohardy.co.uk</a></p>
         </div>
-        <h1 id="name">Leo Hardy</h1>
-        <h2 id="title" class="bottom">Product Manager</h2>
-        <h3 id="email" class="bottom"><strong>Contact details</strong></h3>
-        <p>Email: <a href="mailto:me@leohardy.co.uk">me@leohardy.co.uk</a></p>
     </div>
     {# skills #}
     <div class="skills">
         <h2 class="skills-title">{{skills.segmenttitle}}</h2>
-        <p class="skill"><strong>{{ skills.skill1title }} - </strong>{{ skills.skill1body }}</p>     
-        <p class="skill"><strong>{{ skills.skill2title }} - </strong>{{ skills.skill2body }}</p>
-        <p class="skill"><strong>{{ skills.skill3title }} - </strong>{{ skills.skill3body }}</p>
-        <p class="skill"><strong>{{ skills.skill4title }} - </strong>{{ skills.skill4body }}</p>
-        <p class="skill"><strong>{{ skills.skill5title }} - </strong>{{ skills.skill5body }}</p>
-        <p class="skill"><strong>{{ skills.skill6title }} - </strong>{{ skills.skill6body }}</p>
+        <div id="skill-list">
+            <p class="skill"><strong class="skill-title">{{ skills.skill1title }}</strong></br></br>
+            {{ skills.skill1body }}</p>
+            <p class="skill"><strong class="skill-title">{{ skills.skill2title }}</strong></br></br>
+            {{ skills.skill2body }}</p>
+            <p class="skill"><strong class="skill-title">{{ skills.skill3title }}</strong></br></br>
+            {{ skills.skill3body }}</p>
+            <p class="skill"><strong class="skill-title">{{ skills.skill4title }}</strong></br></br>
+            {{ skills.skill4body }}</p> 
+            <p class="skill"><strong class="skill-title">{{ skills.skill5title }}</strong></br></br>
+            {{ skills.skill5body }}</p>   
+            <p class="skill"><strong class="skill-title">{{ skills.skill6title }}</strong></br></br>
+            {{ skills.skill6body }}</p> 
+        </div>
     </div>
     <div class="central-column">
         <div class="summary">
             <h2 class="summary-title">{{summary.summaryTitle}}</h2>
-            <div class="card summaryBody">{{ summary.summaryBody | markdown | safe }}</div>
+            <div class="card summaryBody">
+                {{ summary.summaryBody | markdown | safe }}
+            </div>
             <br>
         </div>
         <div class="experience">
-            <h2>{{experience.experienceTitle}}</h2>
-            <div id="card experienceBody">
+            <h2 id="experience-title">{{experience.experienceTitle}}</h2>
+            <div class="experience-list">
                 {% include "experience.njk" %}
-            </div>               
+            </div>
         </div>
     </div>
 </div>
