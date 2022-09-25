@@ -39,8 +39,10 @@ summary:
 
 
     As a result, the teams I run consistently deliver sprints and roadmap features through clear communication, effective planning and a culture of shared ownership.
-experience: 
+experience:
   experienceTitle: Experience
 layout: cv
 segmenttitle: Edit CV
+seoTitle: My CV
+seoDescription: CV for Leo Hardy - Product Manager
 ---
