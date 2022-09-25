@@ -2,6 +2,8 @@
 layout: static_page.njk
 title: My Music
 url: music
+seoTitle: leohardy.co.uk - My Music
+seoDescription: Listen to Leo Hardy's music here
 ---
 Besides work and being a parent, I have a passion for music production. Although time doesn't allow for much nowadays, it's I still try to spend some time making music when possible.
 
