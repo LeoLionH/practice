@@ -5,7 +5,7 @@ hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     if(hamburger.classList.contains("active")) {
-        navMenu.style.height = "87px";
+        navMenu.style.height = "84px";
         }
     else navMenu.style.height = "0px"
 });

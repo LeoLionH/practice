@@ -17,6 +17,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "SEO - Page Title", name: "seoTitle", widget: "string"}
+      - {label: "SEO - meta description", name: "seoDescription", widget: "string"}
 
   - name: "staticPages" # Used in routes, e.g., /admin/collections/blog
     label: "Pages" # Used in the UI
@@ -28,27 +30,18 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-
-  - name: "blogs" # Used in routes, e.g., /admin/collections/blog
-    label: "blog" # Used in the UI
-    folder: "blogs" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "SEO - Page Title", name: "seoTitle", widget: "string"}
+      - {label: "SEO - meta description", name: "seoDescription", widget: "string"}
 
   - label: "CV"
     name: "cv"
     slug: "{{slug}}"
     widget: "object"
-    folder: "cv_test" 
+    folder: "cv" 
     fields:
       - {label: "Segment title", name: "segmenttitle", widget: "string"}
+      - {label: "SEO - Page Title", name: "seoTitle", widget: "string"}
+      - {label: "SEO - meta description", name: "seoDescription", widget: "string"}
       - label: "skills"
         name: "skills"
         collapsed: true
@@ -79,7 +72,7 @@ collections:
     name: "jobExperience"
     collapsed: true
     create: true
-    folder: "cv_test/experiences"
+    folder: "cv/experiences"
     slug: "{{jobTitle}}"
     widget: "object"
     fields: 
