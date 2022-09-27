@@ -1,10 +1,11 @@
 ---
 jobTitle: Product Manager
 jobDateFrom: 09 2011
-jobDateTo: 12 2021
+jobDateTo: 12 2022
 currentJob: false
 jobCompany: Madgex
 jobLocation: Brighton, East Sussex
+order: "2"
 jobDetail: >-
   * Line managed a team of 6 across various disciplines (front and backend)
 

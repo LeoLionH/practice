@@ -6,6 +6,7 @@ jobDateTo: 08 2023
 currentJob: true
 jobCompany: Madgex
 jobLocation: Brighton, East Sussex
+order: "1"
 jobDetail: >-
   * Line manage a team of 7 across various disciplines (front, backend &
   Product)

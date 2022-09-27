@@ -73,7 +73,7 @@ collections:
     collapsed: true
     create: true
     folder: "cv/experiences"
-    slug: "{{jobTitle}}"
+    slug: "{{ Order }} - {{jobTitle}}"
     widget: "object"
     fields: 
       - {label: "job title", name: "jobTitle", widget: "string"}
@@ -83,6 +83,7 @@ collections:
       - {label: "company", name: "jobCompany", widget: "string"}
       - {label: "Location", name: "jobLocation", widget: "string"}
       - {label: "job details", name: "jobDetail", widget: "markdown"}
+      - {label: "Order", name: "order", widget: "select", options: ["1", "2", "3"]}
 
 
     
