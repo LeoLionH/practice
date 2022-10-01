@@ -7,7 +7,6 @@
     transition: var(--transition);
     background-color: black;
     position: relative;
-    top: 3px;
 }
 
 .icon:hover > .bar {
@@ -15,10 +14,13 @@
 }
 
 .icon {
+    all:unset;
     background-color: white;
     height: 35px;
     -webkit-transition: var(--transition);
     transition: var(--transition);
+    position: relative;
+    justify-content: center;
 }
 
 .icon:hover {

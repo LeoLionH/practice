@@ -322,4 +322,8 @@ p {
     margin: 0 var(--margin) 0 var(--margin);
 }
 
+.header-location {
+    font-size: 20px;
+}
+
 
