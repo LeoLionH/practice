@@ -23,6 +23,14 @@
     justify-content: center;
 }
 
+.icon:focus, .nav-item:focus, a:focus {       
+    outline-style: solid;
+    outline-color: blue;
+    outline-width: 2px;
+    -webkit-transition: none;
+    transition: none;
+}
+
 .icon:hover {
     background-color: black;
     height: 35px;
