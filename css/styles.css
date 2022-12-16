@@ -103,6 +103,7 @@ body {
 .nav-nested {
     overflow: hidden;
 }
+
 .nav-nested > div {
     border-style: var(--border-style);
     border-color: var(--border-color);
