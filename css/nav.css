@@ -1,3 +1,4 @@
+
 .bar {
     display: block;
     width: 25px; 
@@ -24,8 +25,8 @@
 }
 
 .icon:focus, .nav-item:focus, a:focus {       
-    outline-style: solid;
-    outline-color: blue;
+    outline-style: none;
+    outline-color: none;
     outline-width: 2px;
     -webkit-transition: none;
     transition: none;
@@ -49,18 +50,55 @@
 .nav-nested {
     display: flex;
     flex-direction: column;
-    position:relative;
-    top: 0;
-    gap:0;
+    position:absolute;
+    top: 55px;
     width: 100%;
+    gap:0;
     text-align: center;
     transition: var(--transition);
+    bottom: auto;
+    max-width: 100px;
+    border-style:solid;
+    border-width: 1px;;
+    border-color: rgba(255,255,255,0);
 }
 
 .nav-nested.active {
-    min-height: 112px;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,1);
+    border-style:solid;
+    border-width: 1px;;
+    border-color: black;
 }
 
+.nav-nested > div {
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.nav-nested > div > a {
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-nested.active > div > a {
+    opacity: 1;
+}
+
+.nav-item:hover {
+    background-color: black;
+    transition: var(--transition);
+}
+
+.nav-item:hover a  {
+    color: white;
+    transition: var(--transition);
+    display: block;
+}
+
+
+.nav-hamburger {
+    display: flex;
+    justify-content: flex-end;   
+}

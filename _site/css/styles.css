@@ -34,7 +34,6 @@
     display: grid;
     grid-template-areas: 
     'header header header'
-    'nav nav nav'
     '.  main . '
     'footer footer footer';
     gap: 1em;
@@ -100,36 +99,10 @@ body {
     background-size: cover;
   }
 
-.nav-nested {
-    overflow: hidden;
-}
-
-.nav-nested > div {
-    border-style: var(--border-style);
-    border-color: var(--border-color);
-    padding: 5px;
-}
-
 a,a:link {
     text-decoration: none;
     transition: 0.7s ease;
     color: black;
-}
-
-.nav-item:hover {
-    background-color: black;
-    transition: var(--transition);
-}
-
-.nav-item:hover a  {
-    color: white;
-    transition: var(--transition);
-    display: block;
-}
-
-.nav-hamburger {
-    display: flex;
-    justify-content: flex-end;   
 }
 
 .main {
