@@ -7,4 +7,4 @@ seoDescription: Listen to Leo Hardy's music here
 ---
 While learning React, I built a little SPA for building playlists on Spotify. I've added it as an iframe here - hope you like it. 
 
-<iframe src="https://selectacheekybassline.surge.sh/" title="Spotify playlist builder" style="width:100%;height:1200px"></iframe>
+<iframe src="https://spotify-playlist-app.netlify.app/" title="Spotify playlist builder" style="width:100%;height:1200px"></iframe>
