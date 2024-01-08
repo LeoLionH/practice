@@ -4,7 +4,8 @@
   "description": "11ty site practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "@11ty/eleventy --serve"
   },
   "author": "",
   "license": "ISC",
