@@ -9,4 +9,8 @@ seoDescription: Mental health app for Distorted Thinking
 
 H﻿is ultimate goal was to create a prototype he could use to speak to counsellors and mental health professionals, so they he could build out a more fully-featured site with their assistance. 
 
-**U﻿I:** We started with some basic wireframe sketches drawn during a brain storming session. These would form the basis for the approach to collection information.
+**U﻿I:** We started with some basic wireframe sketches drawn during a brain storming session. These would form the basis for the approach to collection information. 
+
+![wireframe example](/img/mh_1.jpg "Example of an image from the initial drawn wireframes")
+
+T﻿he next stage was to build this out into some interactive wireframes. For this I used lucidchart. 
