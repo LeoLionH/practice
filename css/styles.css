@@ -150,6 +150,7 @@ p {
 
 img {
     max-width: 1200px;
+    max-height: 300px;
 }
 
 /* CV page */
