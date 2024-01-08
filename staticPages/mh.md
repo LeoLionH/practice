@@ -13,4 +13,6 @@ H﻿is ultimate goal was to create a prototype he could use to speak to counsell
 
 ![wireframe example](/img/mh_1.jpg "Example of an image from the initial drawn wireframes")
 
-T﻿he next stage was to build this out into some interactive wireframes. For this I used lucidchart. 
+T﻿he next stage was to build this out into some wireframes. For this I used lucidchart as it has a  variety of UI Components which can be used to quickly design user flows and basic UI layouts.
+
+![wireframes](/img/mh_cognitive_distortions.jpeg "UI components initial layout")
